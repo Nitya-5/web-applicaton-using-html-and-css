@@ -67,11 +67,15 @@
     </h1>
     <div class="box">
       <div class="queryform">
-        <input placeholder="Your name" /><br />
-        <input placeholder="Your email" /><br />
-        <input placeholder="Subject" /><br />
-        <textarea placeholder="Message"></textarea><br />
-        <button>Send Message</button>
+        <input placeholder="Your name" id="name" /><br />
+        <p id="pnam"></p>
+        <input placeholder="Your email" id="email" /><br />
+        <p id="pemal"></p>
+        <input placeholder="Subject" id="subject" /><br />
+        <p id="psub"></p>
+        <textarea placeholder="Message" id="msg"></textarea><br />
+        <p id="pmsg"></p>
+        <button onclick="querycheck()">Send Message</button>
       </div>
       <div class="details">
         <p>
@@ -123,9 +127,11 @@
       </div>
       <div class="f4">
         <p>Newsletter</p>
-        <input width="50px" placeholder="Your Name" />
-        <input width="50px" placeholder="Your email" />
-        <button width="50px">Submit</button>
+        <input width="50px" placeholder="Your Name" id="pname" />
+        <p id="pna"></p>
+        <input width="50px" placeholder="Your email" id="pemail" />
+        <p id="pem"></p>
+        <button width="50px" onclick="submit()">Submit</button>
       </div>
     </div>
     <!--Footer end-->
