@@ -54,6 +54,16 @@ img.mySlides{
     height:800px;
     margin-bottom: 50px;
 }
+.vl {
+    border-left: 6px solid green;
+    height: 25px;
+    margin-left: 40px;
+    display: inline-block;
+}
+.event-head{
+    display: inline-block;
+    text-align: left;
+}
 .container {
     position: relative;
     width: 80%;
