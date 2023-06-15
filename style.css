@@ -1,3 +1,6 @@
+*{
+    font-family:'Open Sans',sans-serif;
+}
 div.head,div.tabs,form{
     display: grid;
 }
@@ -7,7 +10,7 @@ a,li{
 a{text-decoration: none;}
 div.head
 {
-    background-color: black;
+    background-color: #071e22;
     grid-template-columns:1fr 4fr ;
 }
 div.tabs{
@@ -18,7 +21,7 @@ form{
 }
 nav li a:hover{
     background-color:white;
-    color: black;
+    color: #071e22;
 }
 ul {
     list-style-type: none;
@@ -46,9 +49,10 @@ input,button{
 .tabs b{font-size: medium;}
 input{width: 300px;}
 img.mySlides{
-    width:1450px;
+    width:1475px;
     display: none;
-    height:400px;
+    height:800px;
+    margin-bottom: 50px;
 }
 .container {
     position: relative;
@@ -79,7 +83,7 @@ img.mySlides{
 .footer{
     margin-top: 50px;
     padding-top: 20px;
-    background-color: black;
+    background-color: #071e22;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
@@ -157,13 +161,13 @@ li.vbar a{
     padding-left: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
-    color: black;
+    color: #071e22;
 }
 .adm2 h3{
     margin-top: 25px;
 }
 .adm1 li a:hover{
-    background-color:black;
+    background-color:#071e22;
     color: white;
 }
 /*admissions page end*/
@@ -190,7 +194,7 @@ div.polaroid {
 
 /*events page*/
 .events a{
-    color: black;
+    color: #071e22;
 }
 /*events end*/
 
