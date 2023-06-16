@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        background: #f1f1f1;
+      }
+
+      .heade {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 5px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .heade,
+      .row {
+        padding: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navbar start-->
+    <nav>
+      <div class="head">
+        <a href="./home.xhtml">
+          <img src="./logo.jpg" alt="Logo" width="50" height="30" />
+          <b>Academic Heights</b></a
+        >
+        <div class="tabs">
+          <ul class="tabs">
+            <li>
+              <a href="./home.xhtml"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="./about.xhtml"><b>About</b></a>
+            </li>
+            <li>
+              <a href="./programs.xhtml"><b>Programs</b></a>
+            </li>
+            <li>
+              <a href="./admissions.xhtml"><b>Admissions</b></a>
+            </li>
+            <li>
+              <a href="./faculty.xhtml"><b>Faculty</b></a>
+            </li>
+            <li>
+              <a href="./events.xhtml"><b>Events</b></a>
+            </li>
+            <li>
+              <a href="./gallery.xhtml"><b>Gallery</b></a>
+            </li>
+            <li>
+              <a href="./contact.xhtml"><b>Contact</b></a>
+            </li>
+          </ul>
+          <form>
+            <input placeholder="Search" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <div class="heade">
+      <h2>Effective Study Tips to Boost Your Learning</h2>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Introduction:</h2>
+          <h5>Intro, Dec 7, 2022</h5>
+          <img class="fakeimg" src="img/blog1.webp" />
+
+          <p>
+            Studying efficiently is crucial for academic success and personal
+            growth. Whether you're a student preparing for exams or an
+            individual looking to acquire new knowledge, implementing effective
+            study techniques can greatly enhance your learning experience. In
+            this blog post, we will explore ten valuable study tips that can
+            help you maximize your productivity and achieve your educational
+            goals.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Develop a Study Schedule:</h2>
+          <h5>Schedule, Sep 2, 2023</h5>
+          <img class="fakeimg" src="img/blog2.jpg" />
+          <p>
+            Organize your study sessions by creating a timetable that outlines
+            specific time slots for each subject or topic. A structured schedule
+            will help you manage your time effectively and ensure that you cover
+            all the necessary material.
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Set Achievable Goals:</h2>
+          <img class="fakeimg" src="img/blog3.png" />
+          <p>
+            Break down your study material into manageable chunks and set
+            realistic goals for each study session. Setting achievable
+            milestones will provide a sense of accomplishment and keep you
+            motivated throughout the learning process.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Start-->
+    <div class="footer">
+      <div class="f1">
+        <a href="./home.xhtml">
+          <img src="./logo.jpg" alt="Logo" width="50" height="30" />
+          <b>Academic Heights</b>
+        </a>
+        <p>
+          AHPS is a trusted brand in the educational segment, providing the
+          top-notch infrastructure and research-driven curriculum. AHPS focuses
+          on multiple-skills enhancement and developing the young minds with a
+          wider and scientific approach to urge them for striving and chasing
+          their targeted goals.
+        </p>
+      </div>
+      <div class="f2">
+        <p>
+          Get In Touch<br /><br />Address<br />123 Street, New York, USA<br /><br />Email<br />info@example.com<br />
+          <br />Phone<br />+012 345 67890
+        </p>
+      </div>
+      <div class="f3">
+        <p>Quick Links</p>
+        <ol>
+          <li><a href="./home.xhtml">Home</a></li>
+          <li><a href="./about.xhtml">About Us</a></li>
+          <li><a href="./events.xhtml">Events</a></li>
+          <li><a href="./gallery.xhtml">Gallery</a></li>
+          <li><a href="./faculty.xhtml">Faculty</a></li>
+          <li><a href="./contact.xhtml">Contact Us</a></li>
+        </ol>
+      </div>
+      <div class="f4">
+        <p>Newsletter</p>
+        <input width="50px" placeholder="Your Name" id="pname" />
+        <p id="pna"></p>
+        <input width="50px" placeholder="Your email" id="pemail" />
+        <p id="pem"></p>
+        <button width="50px" onclick="submit()">Submit</button>
+      </div>
+    </div>
+    <!--Footer end-->
+  </body>
+</html>
